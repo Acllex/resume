@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>我的简历</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #eee;
+        margin: 20px 0;
+      }
+
+      article {
+        width: 21cm;
+        min-height: 29.7cm;
+        background: white;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 1em;
+      }
+    </style>
+    <style media="print">
+      body {
+        margin: 0;
+      }
+
+      .page2 {
+        page-break-before: always;
+        margin-top: 30px;
+      }
+    </style>
+    <style>
+      body {
+      }
+
+      p {
+        margin: 0.3em 0;
+      }
+
+      h1 {
+        font-size: 25px;
+        margin-top: 0;
+      }
+
+      h4,
+      h5,
+      h6 {
+        font-weight: normal;
+      }
+
+      ol,
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      strong {
+        font-weight: normal;
+        color: #f60;
+      }
+
+      a {
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px solid;
+      }
+
+      p,
+      li {
+        color: #666;
+      }
+
+      strong {
+        font-weight: normal;
+      }
+
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+
+      .bio {
+        position: relative;
+      }
+
+      .bio img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    </style>
+
+    <style>
+      .projects {
+      }
+
+      .projects p {
+        color: #666;
+      }
+
+      .projects strong {
+        color: #f60;
+      }
+
+      .projects > ol {
+        margin-top: 0;
+        list-style-position: inside;
+        padding: 0;
+      }
+
+      .projects > ol > li {
+        margin-bottom: 24px;
+      }
+
+      .projects > ol > li > header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .projects > ol > li h3 {
+        display: inline-block;
+      }
+    </style>
+    <style>
+      .skills {
+      }
+
+      #skills {
+        width: 500px;
+        height: 270px;
+      }
+      @media print {
+        #skills {
+          display: none;
+        }
+      }
+
+      .skills > .wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .skills > .wrapper > :first-child {
+        margin-right: 24px;
+      }
+
+      .skills > .wrapper > #skills {
+      }
+
+      .skills > .wrapper > ul {
+        color: #666;
+      }
+
+      .skills > .wrapper strong {
+        color: #f60;
+      }
+
+      .skills > .wrapper > ul > li {
+        line-height: 1.2;
+        margin-bottom: 8px;
+      }
+    </style>
+    <style>
+      .openSource {
+      }
+
+      .openSource > h2 {
+      }
+
+      .openSource header img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .openSource > ul {
+      }
+
+      .openSource > ul > li {
+        margin-bottom: 24px;
+      }
+
+      .openSource header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .openSource h3 {
+      }
+    </style>
+    <style>
+      .jobs {
+      }
+
+      .jobs > h2 {
+      }
+
+      .jobs > ol {
+      }
+
+      .jobs > ol > li {
+        margin: 12px 0;
+      }
+
+      .jobs header {
+        display: flex;
+        color: #666;
+        margin-bottom: 12px;
+      }
+
+      .jobs header > h3 {
+        font-size: 18px;
+        color: #333;
+      }
+
+      .jobs header > h4 {
+        margin-left: 1em;
+        font-size: 18px;
+      }
+
+      .jobs header > span {
+        font-size: 18px;
+        margin-left: auto;
+      }
+    </style>
+
+    <style>
+      @media (max-width: 500px) {
+        body {
+          margin: 0;
+        }
+
+        article {
+          width: auto;
+          height: auto;
+        }
+
+        .bio img {
+          display: none;
+        }
+
+        .skills .wrapper {
+          flex-direction: column;
+        }
+
+        #skills {
+          width: auto;
+        }
+        .jobs header {
+          flex-direction: column;
+        }
+        .jobs header > h3,
+        .jobs header > h4,
+        .jobs header > span {
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <section class="bio">
+        <h1>王国栋</h1>
+        <img src="/src/images/白底照片.png" alt="" width="100" height="150" />
+        <p>男 | 26岁 | 前端开发工程师 | 昆明</p>
+        <p>手机：13102998115 | 微信：w986169823 | 邮箱：w986169823@163.com</p>
+      </section>
+
+      <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>moon在线云笔记</h3>
+              <span>
+                <a href="https://github.com/Acllex/moonNote">源码链接</a>
+                <a href="https://or.acllex.ml/#/login">项目预览</a>
+              </span>
+            </header>
+            <p>一款基于 <strong>Vue全家桶</strong> 的在线云笔记项目。</p>
+            <p>
+              主要使用的技术有Vue全家桶、markdown语法解析、<strong>使用节流技术实现文档自动保存</strong>、二次封装axios实现请求统一管理、使用ant-design-vue组件库进行样式开发。
+            </p>
+            <p>主要用于个人日常的笔记记录，提升对Vue的使用和理解。</p>
+            <p>
+              开发过程让我能对于 ES6
+              语法有了新的认识，Promise，async、await等异步语法更加熟悉。
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>天天Team小程序</h3>
+            </header>
+            <p>
+              一个基于
+              <strong>原生微信小程序开发框架</strong> 开发的微信小程序。
+            </p>
+            <p>
+              我主要负责的模块是呼梯功能（包括蓝牙呼梯、扫码呼梯、换肤功能），员工体温记录功能（使用echarts绘制折线图）,访客登记功能等。
+            </p>
+            <p>
+              该系统开发让对我微信小程序的开发有了深刻的理解和应用，<strong>大幅提高公司内部的工作效率</strong>，受到公司和用户的好评。
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>呼梯单页面应用</h3>
+              <span>
+                <a href="#">项目预览</a>
+              </span>
+            </header>
+            <p>
+              一个基于
+              <strong>uni-app框架</strong>
+              开发的的移动端单页面应用，分为 <strong>小程序端</strong> 和
+              <strong>H5端</strong>。
+            </p>
+
+            <p>
+              这是我应公司业务需求开发的多平台应用，用uni-app开发解决了应用重复开发的问题，节省了开发时间。
+            </p>
+            <p>
+              该项目大量使用
+              <strong>uni-app框架</strong
+              >，让我对多平台应用的开发有了更多的应用。
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="skills">
+        <h2>技能</h2>
+        <div class="wrapper">
+          <div id="skills"></div>
+          <ul>
+            <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong></li>
+            <li>
+              熟悉<strong>前后端分离</strong>技术，包括
+              AJAX、跨域、前端路由、Cookie、Session 等
+            </li>
+            <li>
+              熟练掌握 <strong>Vue全家桶</strong> 的使用，包括
+              VueCli、VueRouter、Vuex 等
+            </li>
+            <li>
+              熟悉 ES6，包括 let / Promise / await /
+              析构赋值，能熟练使用ES6进行开发
+            </li>
+            <li>比较熟悉微信小程序原生开发方案</li>
+            <li>
+              能够熟练使用
+              <strong>uni-app框架</strong> 进行多平台的项目开发，并进行打包部署
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="openSource">
+        <h2>开源项目</h2>
+        <ul>
+          <li>
+            <header>
+              <h3>echarts可视化数据展示</h3>
+              <span>
+                <a href="https://github.com/Acllex/echarts_demo">源码链接</a>
+                <a href="https://acllex.github.io/echarts_demo/index.html"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              实现了圆环图、自定义地图等常用的图表，主要为了学习echarts用于工作中
+            </p>
+          </li>
+          <li class="page2">
+            <header>
+              <h3>优航导航网站</h3>
+              <span>
+                <a href="https://github.com/Acllex/nav">源码链接</a>
+                <a href="https://acllex.github.io/nav/">项目预览</a>
+              </span>
+            </header>
+            <p>这是我在学习页面布局和JavaScript编程时制作的一个导航网站</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="jobs">
+        <h2>工作经历</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>山西硬汉网络科技有限公司</h3>
+              <h4>前端工程师</h4>
+              <span><time>2020年10月</time>~<time>2022年1月</time></span>
+            </header>
+            <ul>
+              <li>负责前端页面的的编写，根据设计图完美还原前端页面</li>
+              <li>完成前端模块交互逻辑，实现前端页面功能</li>
+              <li>进行Vue组件封装，实现组件复用</li>
+              <li>和后端一起进行接口的调试开发</li>
+              <li>使用节流、防抖技术提升应用性能，提升用户体验</li>
+            </ul>
+          </li>
+          <li>
+            <header>
+              <h3>上海迅达集团(实习)</h3>
+              <h4>前端工程师</h4>
+              <span><time>2020年3月</time>~<time>2020年8月</time></span>
+            </header>
+            <ul>
+              <li>负责呼梯多平台应用的开发和维护，整个应用由我独立完成</li>
+              <li>
+                负责天天team小程序的维护和功能更新，完善功能和提升用户体验
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section class="education">
+        <h2>教育经历</h2>
+        <p>
+          <span><time>2016年</time>~<time>2020年</time></span>
+          太原科技大学 计算机科学于技术 本科
+        </p>
+      </section>
+
+      <section class="others">
+        <h2>其他链接</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/Acllex/Acllex-blog">我的博客</a
+            >，目前已有 20 余篇技术文章
+          </li>
+          <li>
+            <a href="https://github.com/acllex">我的 GitHub</a>
+          </li>
+        </ul>
+      </section>
+    </article>
+    <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
