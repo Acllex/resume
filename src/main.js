@@ -18,6 +18,7 @@ const option = {
             { name: '静态页面', max: 100 },
             { name: '编程基础', max: 100 },
             { name: 'Vue.js', max: 100 },
+            { name: 'React.js', max: 100 },
             { name: '小程序', max: 100 },
             { name: '项目开发', max: 100 },
             { name: '沟通能力', max: 100 }
@@ -29,7 +30,7 @@ const option = {
         // areaStyle: {normal: {}},
         data: [
             {
-                value: [90, 80, 90, 88, 85, 70],
+                value: [90, 80, 90, 90, 88, 85, 70],
                 name: '能力雷达'
             }
         ]
