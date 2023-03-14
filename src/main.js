@@ -30,7 +30,7 @@ const option = {
         // areaStyle: {normal: {}},
         data: [
             {
-                value: [90, 80, 90, 90, 88, 85, 70],
+                value: [90, 80, 90, 90, 78, 85, 80],
                 name: '能力雷达'
             }
         ]
