@@ -1,8 +1,8 @@
 // 基于准备好的dom，初始化echarts实例
-var myChart = echarts.init(document.getElementById('skills'));
+const myChart = echarts.init(document.getElementById('skills'));
 
 // 指定图表的配置项和数据
-var option = {
+const option = {
     tooltip: {},
     radar: {
         // shape: 'circle',
@@ -29,7 +29,7 @@ var option = {
         // areaStyle: {normal: {}},
         data: [
             {
-                value: [90, 80, 90, 78, 85, 70],
+                value: [90, 80, 90, 88, 85, 70],
                 name: '能力雷达'
             }
         ]
